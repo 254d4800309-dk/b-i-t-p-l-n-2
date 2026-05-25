@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý Thói quen Học tập & Kỷ luật</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body><!-- Trang chủ -->
+    <header class="hero">
+        <h1>Quản lý Thói quen Học tập & Kỷ luật</h1>
+        <p>Kỷ luật bản thân là chìa khóa dẫn đến thành công.</p>
+    </header>
+
+    <!-- Card thói quen -->
+    <section class="cards">
+        <div class="card">📚 Học bài đúng giờ</div>
+        <div class="card">🏃 Dậy sớm tập thể dục</div>
+        <div class="card">💧 Uống đủ nước</div>
+        <div class="card">🛌 Ngủ đúng giờ</div>
+    </section>
+
+    <!-- Ảnh cá nhân hóa -->
+    <section class="image-box">
+        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7" alt="Hoc tap">
+    </section>
+
+    <!-- Form quản lý -->
+    <section class="form-section">
+        <h2>Trang Quản Lý</h2>
+
+        <form id="habitForm">
+            <input type="text" id="mssv" value="254D4800309" readonly>
+
+            <input type="text" id="ten" placeholder="Tên thói quen" required>
+
+            <input type="time" id="time" required>
+
+            <input type="number" id="duration" placeholder="Thời lượng (phút)" required>
+
+            <input type="number" id="days" placeholder="Số ngày thực hiện" required>
+
+            <textarea id="note" placeholder="Ghi chú"></textarea>
+
+            <button type="submit">Thêm</button>
+        </form>
+
+        <p id="message"></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>MSSV</th>
+                    <th>Tên thói quen</th>
+                    <th>Thời gian</th>
+                    <th>Thời lượng</th>
+                    <th>Số ngày</th>
+                    <th>Ghi chú</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </section>
+
+    <!-- Debug -->
+    <section class="debug">
+        <h2>Trang Debug</h2>
+        <button onclick="checkEmail('abc@dhcd.edu.vn')">
+            Test Email
+        </button>
+    </section>
+
+    <script src="script.js"></script</body>
+</html>
